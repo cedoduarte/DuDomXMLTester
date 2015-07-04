@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>674</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>674</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitar"/>
+   </widget>
+   <widget class="QMenu" name="menuDatos">
+    <property name="title">
+     <string>Datos</string>
+    </property>
+    <addaction name="actionAgregar"/>
+    <addaction name="actionEliminar"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuDatos"/>
+  </widget>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="text">
+    <string>Guardar como</string>
+   </property>
+  </action>
+  <action name="actionQuitar">
+   <property name="text">
+    <string>Quitar</string>
+   </property>
+  </action>
+  <action name="actionAgregar">
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
